@@ -1,5 +1,5 @@
 # 5C-Hackathon-Spring-2016
 
-Adam Staplemann
+Adam Staplemann \n
 Errol Francis II
-Juan Zamudio!
+Juan Zamudio
