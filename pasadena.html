@@ -27,19 +27,25 @@
         border: solid 1px #c3c3c3;
         font-size: 16pt;
         color: white;
+
     	}
+
     #panel, #panel2, #panel3 {
     	text-align: left;
         padding: 7px;
         display: none;
         border: solid 1px #c3c3c3;
        	background-color: rgb(32,178,170);
+
     	}
+
     #flip:hover, #flip2:hover, #flip3:hover {
     		background-color: rgb(32,178,170);
     }
+
     </style>
     <script>
+
     $(function(){
         $("#flip").click(function(){
             $("#panel").slideToggle("slow");
@@ -50,7 +56,9 @@
         $("#flip3").click(function(){
             $("#panel3").slideToggle("slow");
         });
+
         });
+
         </script>
   </head>
   <body>
@@ -58,11 +66,11 @@
     <div class="container" style="background-color: #5182B3;">
 
       <div class="page-header" >
-      <h1><b>Rides to Pasadena Area:</b></h1>
+      <h1><b>Rides to Pasadena Area</b></h1>
 
       </div>
 
-      <div id = "flip"><b>Adam S. 3 Spots:</b></div>
+      <div id = "flip"><b>Adam S: 3 Spots</b></div>
 
       <div id = "panel" >
       <ul style="display: inline-block;">
@@ -84,7 +92,7 @@
       </div>
 
 
-         <div id="flip2"> <b>Efrain Z. 1 Spot:</b></div>
+         <div id="flip2"> <b>Efrain Z: 1 Spot</b></div>
 
           <div id = "panel2">
             <ul style="display: inline-block;">
@@ -102,7 +110,7 @@
 
           </div>
 
-          <div id="flip3"> <b>Someone from the data table. 4 Spots</b></div>
+          <div id="flip3"> <b>Someone from the data table: 4 Spots</b></div>
 
           <div id = "panel3">
             <ul style="display: inline-block;">
