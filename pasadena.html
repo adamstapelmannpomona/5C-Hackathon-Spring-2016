@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pasadena Area</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <style>
+    body{
+      background-color: #5182B3;
+    }
+    #flip, #flip2, #flip3 {
+    	margin-top: 45px;
+    	background-color: #333;
+        padding: 25px;
+        text-align: left;
+        border: solid 1px #c3c3c3;
+        font-size: 16pt;
+        color: white;
+
+    	}
+
+    #panel, #panel2, #panel3 {
+    	text-align: left;
+        padding: 7px;
+        display: none;
+        border: solid 1px #c3c3c3;
+       	background-color: rgb(32,178,170);
+
+    	}
+
+    #flip:hover, #flip2:hover, #flip3:hover {
+    		background-color: rgb(32,178,170);
+    }
+
+    </style>
+    <script>
+
+    $(function(){
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+        $("#flip2").click(function(){
+            $("#panel2").slideToggle("slow");
+        });
+        $("#flip3").click(function(){
+            $("#panel3").slideToggle("slow");
+        });
+
+        });
+
+        </script>
+  </head>
+  <body>
+
+    <div class="container" style="background-color: #5182B3;">
+
+      <div class="page-header" >
+      <h1><b>Rides to Pasadena Area:</b></h1>
+
+      </div>
+
+      <div id = "flip"><b>Adam S. 3 Spots:</b></div>
+
+      <div id = "panel" >
+      <ul style="display: inline-block;">
+      <h4>Destination: CalTech</h4>
+      <h4>Date:04/20/2016</h4>
+      <h4>Departure Time: 04:20PM</h4>
+      <h4>Arrival Time: 04:20AM</h4>
+      <h4>Flexible: YES</h4>
+
+      </ul>
+
+      <ul style="display: float: right; padding-right: 40%;">
+        <div><h4>Description: He is going to CalTech on 4/20 at 4:20, don't miss out!</h4></div>
+      </ul>
+
+
+
+
+      </div>
+
+
+         <div id="flip2"> <b>Efrain Z. 1 Spot:</b></div>
+
+          <div id = "panel2">
+            <ul style="display: inline-block;">
+            <h4>Destination: CalTech</h4>
+            <h4>Date:04/20/2016</h4>
+            <h4>Departure Time: 04:20PM</h4>
+            <h4>Arrival Time: 04:20AM</h4>
+            <h4>Flexible: YES</h4>
+
+            </ul>
+
+            <ul style="display: float: right; padding-right: 40%;">
+              <div><h4>Description: He is going to CalTech on 4/20 at 4:20, don't miss out!</h4></div>
+            </ul>
+
+          </div>
+
+          <div id="flip3"> <b>Someone from the data table. 4 Spots</b></div>
+
+          <div id = "panel3">
+            <ul style="display: inline-block;">
+            <h4>Destination: CalTech</h4>
+            <h4>Date:04/20/2016</h4>
+            <h4>Departure Time: 04:20PM</h4>
+            <h4>Arrival Time: 04:20AM</h4>
+            <h4>Flexible: YES</h4>
+
+            </ul>
+
+            <ul style="display: float: right; padding-right: 40%;">
+              <div><h4>Description: He is going to CalTech on 4/20 at 4:20, don't miss out!</h4></div>
+            </ul>
+
+
+          </div>
+
+
+
+
+   <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
