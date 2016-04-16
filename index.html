@@ -35,6 +35,25 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '792458037555160',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   </script>
+
+    <div id="background"></div>
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -46,26 +65,33 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">HOVr</a>
+              <a class="navbar-brand" href="index.html">HOVr</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index2.html">About</a></li>
+                <li><a href="#contact.html">Contact</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Book Ride <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Create Ride</a></li>
-                    <li><a href="#">Look for Ride</a></li>
-                    <li><a href="#">Request Ride</a></li>
+                    <li><a href="driverpage.html">Create Ride</a></li>
+                    <li><a href="riderpage.html">Look for Ride</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header">More Information</li>
                     <li><a href="https://www.google.com/maps/dir/Claremont,+CA/Los+Angeles,+CA/@34.0279906,-118.3935037,10z/data=!4m14!4m13!1m5!1m1!1s0x80c33a947ba7f65f:0xd57add892abc374d!2m2!1d-117.7197785!2d34.0966764!1m5!1m1!1s0x80c2c75ddc27da13:0xe22fdf6f254608f4!2m2!1d-118.2436849!2d34.0522342!3e0">Traffic Information</a></li>
                     <li><a href="http://www.timeanddate.com/calendar/?country=1">2016 Calendar</a></li>
                   </ul>
                 </li>
+                <li><a href="https://www.facebook.com"> Like us on Facebook!</a></li>
+                <li><<div
+                class="fb-like"
+                data-share="true"
+                data-width="450"
+                data-show-faces="true">
+              </div></li>
               </ul>
             </div>
           </div>
@@ -89,9 +115,7 @@
           <img class="first-slide" src="slide1.jpg" alt="First slide">
           <div class="container">
             <div id="rectangle"></div>
-            <img class="logo1" src= "logo1.png" alt="Logo">
             <div class="carousel-caption">
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up</a></p>
             </div>
           </div>
         </div>
@@ -99,11 +123,9 @@
           <img class="second-slide" src="slide2.jpg" alt="Second slide">
           <div class="container">
             <div id="rectangle"></div>
-            <img class="logo1" src= "logo1.png" alt="Logo">
             <div class="carousel-caption">
               <h1></h1>
               <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -111,11 +133,9 @@
           <img class="third-slide" src="slide3.jpg" alt="Third slide">
           <div class="container">
             <div id="rectangle"></div>
-            <img class="logo1" src= "logo1.png" alt="Logo">
             <div class="carousel-caption">
               <h1></h1>
               <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
             </div>
           </div>
         </div>
@@ -128,6 +148,9 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+      <img class="logo1" src= "logo1.png" alt="Logo">
+      <img class="slogan1" src="slogan1.png" alt="Slogan">
+      <p><a class="button" href="driverpage.html" role="button">Sign up</a></p>
     </div><!-- /.carousel -->
 
 
@@ -143,19 +166,19 @@
           <img class="img-circle" src="header1.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Drivers</h2>
           <p>Create a ride for others to share with you!</p>
-          <p><a class="btn btn-default" href="#" role="button">Drive &raquo;</a></p>
+          <p><a class="btn btn-default" href="driverpage.html" role="button">Drive &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="header2.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Riders</h2>
           <p>Share a ride with someone!</p>
-          <p><a class="btn btn-default" href="#" role="button">Ride &raquo;</a></p>
+          <p><a class="btn btn-default" href="riderpage.html" role="button">Ride &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="header3.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Sign Up</h2>
           <p>Become a member!</p>
-          <p><a class="btn btn-default" href="#" role="button">Go &raquo;</a></p>
+          <p><a class="btn btn-default" href="driverpage.html" role="button">Go &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -166,11 +189,11 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading"> Spend less time in traffic by using the HOV lane. <span class="text-muted">No more road rage.</span></h2>
+          <p class="lead">When you use HOVr, you give yourself a fast pass to the beach or wherever you are going. The road is your oyster. Plus, you save the environment while you are at it.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="feature1" src="feature1.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -178,11 +201,11 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading"> Meet new people. Make new friends. <span class="text-muted"> Never drive alone again.</span></h2>
+          <p class="lead">When you rideshare, you open yourself up to a world of possibilities. You'll meet people you never knew existed.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="feature2" src="feature2.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -190,11 +213,23 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Save time.<span class="text-muted">Time is money.</span></h2>
+          <p class="lead">No more waiting for the Metrolink that will never come. It is your time to take matters into your own hands.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="feature3" src="feature3.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading"> Split the cost. Keep the change.<span class="text-muted"> Your pockets will thank you.</span></h2>
+          <p class="lead">You will never have to pay full price for gas again. Everyone benefits. It's as simple as that.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="feature4" src="feature4.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -206,7 +241,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2015 HOVr, Inc. &middot; <a href="https://www.google.com/intl/en/policies/privacy/?fg=1">Privacy</a> &middot; <a href="https://www.google.com/intl/en/policies/terms/?fg=1">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
